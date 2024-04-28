@@ -1,0 +1,683 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNoV1jYuSoBm4+JCTOzvt2O",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Kimyoungsu7/python_1/blob/main/python_6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T1pBFrEsCduX",
+        "outputId": "dcf5c57c-b158-4d41-f5a0-57887df9a4a7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "How old are you20\n",
+            "20 years old\n"
+          ]
+        }
+      ],
+      "source": [
+        "str = input(\"How old are you\")\n",
+        "print(str , 'years old', sep=' ')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "x = int(input('number : '))\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DX-EaCVLHyic",
+        "outputId": "af2c2e62-728f-4287-ed92-16ff4710d6c7"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "number : 20\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = float(input('number : '))\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v5MG0uReIHx2",
+        "outputId": "765963c4-8058-4e97-a608-2501ead349f4"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "number : 20\n",
+            "20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = input (\"this year : \")\n",
+        "year = eval(year)\n",
+        "year = year + 1\n",
+        "print(\"Next year:\", year)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MEjVdHKfIyBT",
+        "outputId": "2bb54275-072f-4223-b47e-bffebd8f2bd8"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "this year : 2024\n",
+            "Next year: 2025\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 0\n",
+        "result = 0\n",
+        "while i < 5:\n",
+        "  print(f'{i} 번째',end=\" \")\n",
+        "  a = input(\"성적 입력 : \")\n",
+        "  result += int(a)\n",
+        "  i += 1\n",
+        "\n",
+        "print(f'합 : {result}')\n",
+        "print(f'평균 : {result / 5}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GZwh7L9SkbnN",
+        "outputId": "e60d447a-511f-4b7e-e028-8236f7ed0481"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 번째 성적 입력 : 100\n",
+            "1 번째 성적 입력 : 80\n",
+            "2 번째 성적 입력 : 89\n",
+            "3 번째 성적 입력 : 95\n",
+            "4 번째 성적 입력 : 99\n",
+            "합 : 463\n",
+            "평균 : 92.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "test_list = ['one', 'two', 'three']\n",
+        "for i in test_list:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e_zUk6ctk6HL",
+        "outputId": "13090de7-bb68-479e-fb65-6242902bbab6"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "one\n",
+            "two\n",
+            "three\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 10):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AcB0WerRk7tj",
+        "outputId": "7b98befd-7159-4edd-b5b1-598fa67871ea"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = 0\n",
+        "for a in range(1, 101):  #1 ~ 100\n",
+        "\n",
+        "  result = result + a\n",
+        "  print(f\"{a} {result}\")\n",
+        "\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9uYwahw8k9fe",
+        "outputId": "378b2a4a-5a81-4f14-f9f6-a884f30623e5"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 1\n",
+            "2 3\n",
+            "3 6\n",
+            "4 10\n",
+            "5 15\n",
+            "6 21\n",
+            "7 28\n",
+            "8 36\n",
+            "9 45\n",
+            "10 55\n",
+            "11 66\n",
+            "12 78\n",
+            "13 91\n",
+            "14 105\n",
+            "15 120\n",
+            "16 136\n",
+            "17 153\n",
+            "18 171\n",
+            "19 190\n",
+            "20 210\n",
+            "21 231\n",
+            "22 253\n",
+            "23 276\n",
+            "24 300\n",
+            "25 325\n",
+            "26 351\n",
+            "27 378\n",
+            "28 406\n",
+            "29 435\n",
+            "30 465\n",
+            "31 496\n",
+            "32 528\n",
+            "33 561\n",
+            "34 595\n",
+            "35 630\n",
+            "36 666\n",
+            "37 703\n",
+            "38 741\n",
+            "39 780\n",
+            "40 820\n",
+            "41 861\n",
+            "42 903\n",
+            "43 946\n",
+            "44 990\n",
+            "45 1035\n",
+            "46 1081\n",
+            "47 1128\n",
+            "48 1176\n",
+            "49 1225\n",
+            "50 1275\n",
+            "51 1326\n",
+            "52 1378\n",
+            "53 1431\n",
+            "54 1485\n",
+            "55 1540\n",
+            "56 1596\n",
+            "57 1653\n",
+            "58 1711\n",
+            "59 1770\n",
+            "60 1830\n",
+            "61 1891\n",
+            "62 1953\n",
+            "63 2016\n",
+            "64 2080\n",
+            "65 2145\n",
+            "66 2211\n",
+            "67 2278\n",
+            "68 2346\n",
+            "69 2415\n",
+            "70 2485\n",
+            "71 2556\n",
+            "72 2628\n",
+            "73 2701\n",
+            "74 2775\n",
+            "75 2850\n",
+            "76 2926\n",
+            "77 3003\n",
+            "78 3081\n",
+            "79 3160\n",
+            "80 3240\n",
+            "81 3321\n",
+            "82 3403\n",
+            "83 3486\n",
+            "84 3570\n",
+            "85 3655\n",
+            "86 3741\n",
+            "87 3828\n",
+            "88 3916\n",
+            "89 4005\n",
+            "90 4095\n",
+            "91 4186\n",
+            "92 4278\n",
+            "93 4371\n",
+            "94 4465\n",
+            "95 4560\n",
+            "96 4656\n",
+            "97 4753\n",
+            "98 4851\n",
+            "99 4950\n",
+            "100 5050\n",
+            "5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = 0\n",
+        "for a in range(1,101):  # 1 ~ 100\n",
+        "  result = result + a     # a를 더해주고\n",
+        "  print(f'{a} : sum = {result}')          # 그때의 a값을 출력\n",
+        "  if result > 100:      # result가 100이 넘었을때\n",
+        "\n",
+        "      break\n",
+        "\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F4Cwzj37l27w",
+        "outputId": "85755f39-2556-477f-cebd-bb8fab2365b4"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 : sum = 1\n",
+            "2 : sum = 3\n",
+            "3 : sum = 6\n",
+            "4 : sum = 10\n",
+            "5 : sum = 15\n",
+            "6 : sum = 21\n",
+            "7 : sum = 28\n",
+            "8 : sum = 36\n",
+            "9 : sum = 45\n",
+            "10 : sum = 55\n",
+            "11 : sum = 66\n",
+            "12 : sum = 78\n",
+            "13 : sum = 91\n",
+            "14 : sum = 105\n",
+            "105\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "index = 0\n",
+        "s = \"BlockDMask\"\n",
+        "for a in s:\n",
+        "  print(a,end=' ')\n",
+        "  if a == 'k':\n",
+        "    break     # 'k'를 찾았으니 for문에서 나와랏!\n",
+        "\n",
+        "  index = index + 1\n",
+        "\n",
+        "print(index)   # 'k'가 첫번째로 존재하는 위치 출력"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wzC_6ke7l40J",
+        "outputId": "e1498835-83c3-402c-e720-78791aad64a2"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "B l o c k 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student = [180, 170, 164, 199, 182, 172, 177]\n",
+        "for a in student:\n",
+        "  if a > 170:\n",
+        "\n",
+        "    continue  # 키가 170보다 크면 continue\n",
+        "\n",
+        "  print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4zmuGHUmmMoh",
+        "outputId": "581539a7-ca45-4b81-b6ed-8831440690c6"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "170\n",
+            "164\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = 0\n",
+        "for a in range(1,101):  #1 ~ 100\n",
+        "  if a % 2 == 0:        #2로 나누었을때 나머지가 1\n",
+        "\n",
+        "      continue\n",
+        "  result = result + a\n",
+        "\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PvpomOKpmZB_",
+        "outputId": "0c8bfe9f-617f-4529-c706-f6972c4b8baa"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2500\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "l = ['Alice' , 'Bob' , 'Charlie']\n",
+        "\n",
+        "for name in l:\n",
+        "    if name == 'Bob':\n",
+        "        print('!!BREAK!!')\n",
+        "        break\n",
+        "    print(name)\n",
+        "else:\n",
+        "    print('!!FINISH!!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M9HM8VNomrDU",
+        "outputId": "eb7bceff-e2a3-411b-a585-a9b00a326712"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Alice\n",
+            "!!BREAK!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "l = ['Alice', 'Bob', 'Charlie']\n",
+        "\n",
+        "for name in l:\n",
+        "    print(name)\n",
+        "\n",
+        "for i, name in enumerate(l):\n",
+        "    print(i, name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fAcZC7LanCga",
+        "outputId": "6c6f079f-7cff-41db-96a6-34473c1509bb"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Alice\n",
+            "Bob\n",
+            "Charlie\n",
+            "0 Alice\n",
+            "1 Bob\n",
+            "2 Charlie\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i, name in enumerate(l, 1):\n",
+        "    print(i, name)\n",
+        "\n",
+        "for i, name in enumerate(l, 42):\n",
+        "    print(i, name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BziTJeRtnFBo",
+        "outputId": "566ea653-6b35-48f3-9ea9-f303e571f3e7"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 Alice\n",
+            "2 Bob\n",
+            "3 Charlie\n",
+            "42 Alice\n",
+            "43 Bob\n",
+            "44 Charlie\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sr = ['father', 'mother', 'brother']\n",
+        "cnt = 0\n",
+        "for s in sr:\n",
+        "        for c in s:\n",
+        "            if c == 'r':\n",
+        "                cnt += 1\n",
+        "print(cnt)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "12xp3jZEnQPQ",
+        "outputId": "f7a783b3-b433-4c7f-bd90-55d4e648c022"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = []\n",
+        "\n",
+        "for i in range(10):\n",
+        "    a.append(0)\n",
+        "\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wmJ8tkQknofC",
+        "outputId": "0453c9d9-91cb-4f03-9934-8f8309a87810"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = []\n",
+        "\n",
+        "for i in range(3):\n",
+        "    line = []\n",
+        "    for j in range(2):\n",
+        "        line.append(0)\n",
+        "    a.append(line)\n",
+        "\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cThyU7-InqKa",
+        "outputId": "de41b0fd-e03f-4857-dafe-8288fe77e3b8"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0, 0], [0, 0], [0, 0]]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
