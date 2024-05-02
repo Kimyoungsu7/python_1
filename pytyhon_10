@@ -1,0 +1,505 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMzHmILXjcov3WOoE+As/1W",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Kimyoungsu7/python_1/blob/main/pytyhon_10\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def my_avg(x1, x2):\n",
+        "    \"\"\"\n",
+        "    This function calculates average value of two numbers\n",
+        "    x1: first input number\n",
+        "    x2: second input number\n",
+        "    \"\"\"\n",
+        "    avg_val = (float(x1) + float(x2))/2\n",
+        "    return avg_val\n"
+      ],
+      "metadata": {
+        "id": "bTxjGk3raq_T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OG3I5EuxYBVH",
+        "outputId": "8b38a0d7-16f7-4bb0-a6cc-ea6bd1ba5bb5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "BlockDMask\n",
+            "BlockDMask\n",
+            "BlockDMask\n"
+          ]
+        }
+      ],
+      "source": [
+        "def 함수명() :\n",
+        "   수행문장\n",
+        "   ...\n",
+        "\n",
+        "def func1():\n",
+        "    print('BlockDMask')\n",
+        "\n",
+        "# 함수 호출\n",
+        "func1()\n",
+        "func1()\n",
+        "func1()\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func2(a, b):\n",
+        "    print(f'{a} 곱하기 {b} = {a * b}')\n",
+        "\n",
+        "# 함수 호출\n",
+        "func2(1, 2)\n",
+        "func2(1, 3)\n",
+        "func2(2, 4)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0sCCltiaYX2F",
+        "outputId": "75f3898e-fdc0-431e-b0ad-d5ffdadfc98e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 곱하기 2 = 2\n",
+            "1 곱하기 3 = 3\n",
+            "2 곱하기 4 = 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func3():\n",
+        "    return \"abcdefg\"\n",
+        "\n",
+        "# 함수 호출\n",
+        "\n",
+        "a = func3()\n",
+        "print(a + \"GG\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o0Ut6gnbYfrj",
+        "outputId": "3bb7f269-31ef-49bb-9b32-1243a3478a47"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "abcdefgGG\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func4(a, b):\n",
+        "    return a * b\n",
+        "\n",
+        "# 함수 호출\n",
+        "c = func4(3, 9)\n",
+        "print(c)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sejIM7n5YlLd",
+        "outputId": "b1903251-6243-402a-9595-10d9a841462d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "27\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 구구단 함수아닌 버전\n",
+        "\n",
+        "# 구구단 출력\n",
+        "for i in range(1, 10):\n",
+        "    print(f'{2} x {i} = {2 * i}')\n",
+        "for i in range(1, 10):\n",
+        "    print(f'{3} x {i} = {3 * i}')\n",
+        "\n",
+        "# ...\n",
+        "for i in range(1, 10):\n",
+        "    print(f'{9} x {i} = {9 * i}')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JQQ6TWucYo20",
+        "outputId": "80347ad9-cac1-4c83-9812-4283d44e322a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 x 1 = 2\n",
+            "2 x 2 = 4\n",
+            "2 x 3 = 6\n",
+            "2 x 4 = 8\n",
+            "2 x 5 = 10\n",
+            "2 x 6 = 12\n",
+            "2 x 7 = 14\n",
+            "2 x 8 = 16\n",
+            "2 x 9 = 18\n",
+            "3 x 1 = 3\n",
+            "3 x 2 = 6\n",
+            "3 x 3 = 9\n",
+            "3 x 4 = 12\n",
+            "3 x 5 = 15\n",
+            "3 x 6 = 18\n",
+            "3 x 7 = 21\n",
+            "3 x 8 = 24\n",
+            "3 x 9 = 27\n",
+            "9 x 1 = 9\n",
+            "9 x 2 = 18\n",
+            "9 x 3 = 27\n",
+            "9 x 4 = 36\n",
+            "9 x 5 = 45\n",
+            "9 x 6 = 54\n",
+            "9 x 7 = 63\n",
+            "9 x 8 = 72\n",
+            "9 x 9 = 81\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 구구단 함수 버전\n",
+        "def gugudan(num):\n",
+        "    for i in range(1, 10):\n",
+        "        print(f'{num} x {i} = {num * i}')\n",
+        "\n",
+        "# 구구단 출력\n",
+        "gugudan(2)\n",
+        "gugudan(3)\n",
+        "# ...\n",
+        "gugudan(9)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jm71AS0tYtPg",
+        "outputId": "f1ab3d03-5767-4248-ab1a-3ada3359765a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 x 1 = 2\n",
+            "2 x 2 = 4\n",
+            "2 x 3 = 6\n",
+            "2 x 4 = 8\n",
+            "2 x 5 = 10\n",
+            "2 x 6 = 12\n",
+            "2 x 7 = 14\n",
+            "2 x 8 = 16\n",
+            "2 x 9 = 18\n",
+            "3 x 1 = 3\n",
+            "3 x 2 = 6\n",
+            "3 x 3 = 9\n",
+            "3 x 4 = 12\n",
+            "3 x 5 = 15\n",
+            "3 x 6 = 18\n",
+            "3 x 7 = 21\n",
+            "3 x 8 = 24\n",
+            "3 x 9 = 27\n",
+            "9 x 1 = 9\n",
+            "9 x 2 = 18\n",
+            "9 x 3 = 27\n",
+            "9 x 4 = 36\n",
+            "9 x 5 = 45\n",
+            "9 x 6 = 54\n",
+            "9 x 7 = 63\n",
+            "9 x 8 = 72\n",
+            "9 x 9 = 81\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 디폴트 파라미터 예제 1\n",
+        "def func1(a, b=5, c=10):\n",
+        "    return a + b + c\n",
+        "\n",
+        "print( func1(1, 2, 3) )  # 1 + 2 + 3\n",
+        "print( func1(1, 2) )  # 1 + 2 + 10\n",
+        "print( func1(1) )  # 1 + 5 + 10\n",
+        "\n",
+        "print\n",
+        "\n",
+        "# 디폴트 파라미터 예제 2\n",
+        "def func2(a=10, b=20):\n",
+        "    return a + b\n",
+        "\n",
+        "print( func2(1, 2))  # 1 + 2\n",
+        "print( func2(1) ) # 1 + 20\n",
+        "print( func2() )  # 10 + 20\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e1bDwO08Yw10",
+        "outputId": "e1c22eeb-5d64-4805-d949-7f442c8ccac8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "13\n",
+            "16\n",
+            "3\n",
+            "21\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func6(*args):\n",
+        "    a = 0\n",
+        "    for i in args:\n",
+        "        a = a + i\n",
+        "    return a\n",
+        "\n",
+        "\n",
+        "b = func6(1, 2)\n",
+        "print(b)\n",
+        "\n",
+        "c = func6(2, 3, 4, 5)\n",
+        "print(c)\n",
+        "\n",
+        "d = func6(1, 2, 3, 4, 5, 4, 3, 2, 1)\n",
+        "print(d)\n",
+        "\n",
+        "e = func6()\n",
+        "print(e)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AMaqzGquZERn",
+        "outputId": "dbe4b827-c93b-4a42-b719-ba593c7ccd04"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "14\n",
+            "25\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def test(*val):\n",
+        "    for i in val:\n",
+        "        print(i)\n",
+        "\n",
+        "test(1, 'a', 'c', 3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GUjUJynGa_6y",
+        "outputId": "db6a95d3-c56b-4669-f38c-95b123be84d7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "a\n",
+            "c\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum_mul(choice, *val):\n",
+        "    if choice == 'sum':\n",
+        "        result = 0\n",
+        "        for i in val:\n",
+        "            result = result + i\n",
+        "    elif choice == 'mul':\n",
+        "        result = 1\n",
+        "        for i in val:\n",
+        "            result = result * i\n",
+        "    return result\n",
+        "\n",
+        "print(sum_mul('sum', 1, 2, 3, 4, 5))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eUtljKRzbrBw",
+        "outputId": "57c8e9be-39b3-4823-e2fe-0ce1f50c6044"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def comp (score=0):\n",
+        "    if score == 0:\n",
+        "        return 0\n",
+        "    elif score > 50:\n",
+        "        return 2\n",
+        "    else:\n",
+        "        return 1\n",
+        "\n",
+        "grade = comp (40)\n",
+        "print (\"Grade is \", grade, \" for \", 40)\n",
+        "\n",
+        "grade = comp (80)\n",
+        "print (\"Grade is \", grade, \" for \", 80)\n",
+        "\n",
+        "grade = comp ()\n",
+        "print (\"Grade is \", grade, \"for no score\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KUIFW0qYdlm3",
+        "outputId": "402c1049-6787-43a6-a598-02158314e5fd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Grade is  1  for  40\n",
+            "Grade is  2  for  80\n",
+            "Grade is  0 for no score\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def report(name, age, score):\n",
+        "    print(name, score)\n",
+        "\n",
+        "report(age=20, name=\"Kim Young Su\", score=90)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uIqx_usedqNu",
+        "outputId": "1ad4a240-7341-4ee5-c1b6-4f8e7f502771"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Kim Young Su 90\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
